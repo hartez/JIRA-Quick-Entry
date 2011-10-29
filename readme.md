@@ -9,13 +9,12 @@ via [JIRA's SOAP API](http://docs.atlassian.com/rpc-jira-plugin/latest/com/atlas
 
 To set up the tool, replace the 'address' attribute in the 'endpoint' section of the app.config with the address of your JIRA instance. 
 
-When entering an issue, the Project and Summary fields are required. You can click the 'Create' button to submit your issue or hit CTRL-ENTER.
+When entering an issue, the Project, Issue Type, and Summary fields are required. You can click the 'Create' button to submit your issue or hit CTRL-ENTER.
 
 As you add issues, their summaries will show up on the right to help you keep track of what you entered.
 
 Known issues (stuff I haven't gotten around to fixing yet):
 
-* There's currently no way to select an issue type - they default to 'New Feature'. I'll add a dropdown sometime in the near future.
 * If you close the login dialog (instead of logging in), submitting issues will fail (and you'll have to restart to log in)
 * No installer yet, so you'll have to build from source. 
 
