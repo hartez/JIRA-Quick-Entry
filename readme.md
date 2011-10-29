@@ -1,4 +1,4 @@
-﻿# JIRA Quick Entry Tool
+# JIRA Quick Entry Tool
 
 I recently had to start working with JIRA for tracking project issues. I was in a situation where I needed to enter a lot of issues quickly by 
 hand (I didn't have an existing .csv file or anything), and as far as I could tell, JIRA doesn't have a quick-entry feature like [FogBugz](http://www.fogcreek.com/fogbugz/) does. 
