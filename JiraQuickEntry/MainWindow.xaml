@@ -10,11 +10,10 @@
 			<ColumnDefinition Width="239*" />
 		</Grid.ColumnDefinitions>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="50" />
+			<RowDefinition Height="100" />
 			<RowDefinition Height="200*" />
 			<RowDefinition Height="63" />
 		</Grid.RowDefinitions>
-
 
 		<Grid Grid.Row="1">
 			<Grid.RowDefinitions>
@@ -50,19 +49,44 @@
 					 Width="Auto" />
 		</Grid>
 
-		<TextBlock Margin="10,0,0,0"
-				   Height="Auto"
-				   Width="45"
-				   LineHeight="10"
-				   VerticalAlignment="Center"	
-				   HorizontalAlignment="Left">Project:</TextBlock>
-		
-		<TextBox Height="23"
-				 Margin="55,10,10,10"
-				 Name="Project"
-				 VerticalAlignment="Center"
-				 HorizontalAlignment="Left"
-				 Width="200" />
+		<Grid Grid.Row="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="50"></RowDefinition>
+				<RowDefinition Height="50"></RowDefinition>
+			</Grid.RowDefinitions>
+				<TextBlock Margin="10,0,0,0"
+						   Height="Auto"
+						   Width="45"
+						   LineHeight="10"
+						   VerticalAlignment="Center"	
+						   HorizontalAlignment="Left">Project:</TextBlock>
+
+				<ComboBox Height="23"
+					  Margin="79,10,0,10"
+					  Name="Project"
+					  SelectionChanged="Project_SelectionChanged"
+					  VerticalAlignment="Center"
+					  HorizontalAlignment="Left"
+					  DisplayMemberPath="name"
+					  SelectedValuePath="id"
+					  Width="176"></ComboBox>
+
+			<TextBlock Grid.Row="1" Margin="10,0,0,0"
+					   Height="Auto"
+					   Width="63"
+					   LineHeight="10"
+					   VerticalAlignment="Center"
+					   HorizontalAlignment="Left">Issue Type:</TextBlock>
+
+			<ComboBox Height="23" Grid.Row="1"
+					 Margin="79,10,0,10"
+					 Name="IssueType"
+					 VerticalAlignment="Center"
+					 HorizontalAlignment="Left"
+					 DisplayMemberPath="name"
+					 SelectedValuePath="id"
+					 Width="176" />
+		</Grid>
 
 		<Button Content="Create"
 				Click="Button_Click"

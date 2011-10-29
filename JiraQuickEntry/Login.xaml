@@ -19,7 +19,7 @@
 				 VerticalAlignment="Top"
 				 Width="120" />
 		<Button Content="Login"
-				Height="23"
+				Height="23" IsDefault="True"
 				HorizontalAlignment="Center"
 				Margin="100,0,104,58"
 				Name="button1"
